@@ -2,10 +2,22 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int n;
+
+	cout << "Enter a positive integer: ";
+	cin >> n;
+	cout << "Number " << n << " Factors: ";
+
+	for (int k = 1; k <= n; k++)
+		if (n % k == 0)
+			cout << k << " ";
+	cout << endl;
+
+	return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
